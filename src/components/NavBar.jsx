@@ -6,7 +6,7 @@ import { TiLocationArrow } from "react-icons/ti";
 
 import Button from "./Button";
 
-const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
+const navItems = ["Vault", "Prologue", "About", "Contact"];
 
 const NavBar = () => {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
@@ -24,7 +24,6 @@ const NavBar = () => {
     setIsIndicatorActive((prev) => !prev);
   };
 
-  // Manage audio playback
   useEffect(() => {
     if (isAudioPlaying) {
       audioElementRef.current.play();
